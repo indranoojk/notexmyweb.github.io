@@ -1,0 +1,432 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
+
+  <title>Project X | Special Books</title>
+
+  <style>
+    #head {
+      text-align: center;
+      margin: 40px 10px;
+      font-family: 'Merienda', cursive;
+    }
+
+    .row {
+      /* background-image: url(szabo-viktor-28ZbKOWiZfs-unsplash.jpg); */
+      background-image: linear-gradient(to bottom right, skyblue, teal, aqua, red, yellow, aqua, teal);
+      /* background-image: radial-gradient(circle, skyblue, teal, aqua, rgb(48, 5, 238), red, yellow, purple, blue); */
+      /* background-image: linear-gradient(to bottom right, skyblue, teal, aqua, rgb(48, 5, 238), purple, blue); */
+      padding-left: 5rem;
+    }
+
+    .dropdown:hover .dropdown-menu {
+      display: block;
+    }
+
+    /* .image-popup:hover{
+      transition: transform .2s;
+      transform: scale(1.1);
+    } */
+
+    .prologue {
+      font-size: 19px;
+      /* color: white; */
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    .navbar {
+      background: linear-gradient(144deg, rgb(124, 4, 124), rgb(22, 22, 170), rgb(5, 5, 5));
+      color: black;
+    }
+
+    .container-fluid {
+      background-color: transparent;
+      color: white;
+    }
+
+    .container-fluid ul li a {
+      color: white;
+    }
+
+    .container-fluid ul li a:hover {
+      color: rgb(16, 194, 152);
+    }
+
+    .navbar-brand {
+      color: white;
+    }
+
+    .navbar-brand:hover {
+      color: white;
+    }
+
+    .container-fluid ul li .dropdown-item {
+      color: black;
+    }
+
+    .container-fluid ul li .dropdown-menu {
+      background-color: rgb(28, 217, 198);
+    }
+
+    .container-fluid ul li .dropdown-item:hover {
+      color: rgb(71, 12, 248);
+      background-color: rgb(244, 238, 183);
+      transition: transform .2s;
+      /* margin: 0px 12px 0px 12px; */
+      transform: scale(1.1);
+    }
+
+
+    .container-fluid ul li .underline {
+      height: 1px;
+      background-color: transparent;
+      width: 0%;
+      transition: width 0.2s, background-color 0.5s;
+      margin: 0 auto;
+      color: black;
+    }
+
+    /* .container-fluid ul li.active-link .underline {
+      width: 100%;
+      background-color: white;
+    } */
+
+    .container-fluid ul li:hover .underline {
+      background-color: white;
+      /* color: white; */
+      width: 100%;
+    }
+
+    .btn {
+      align-items: center;
+      /* background-image: linear-gradient(144deg, #AF40FF, #5B42F3, #00DDEB); */
+      background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+      border: 0;
+      border-radius: 8px;
+      box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+      box-sizing: border-box;
+      color: #FFFFFF;
+      display: flex;
+      font-family: Phantomsans, sans-serif;
+      font-size: 16px;
+      justify-content: center;
+      touch-action: manipulation;
+      white-space: nowrap;
+      cursor: pointer;
+      padding: 3px;
+      text-decoration: none;
+      user-select: none;
+      -webkit-user-select: none;
+    }
+
+    .btn span {
+      background-color: rgb(5, 6, 45);
+      padding: 6px 14px;
+      border-radius: 6px;
+      width: 100%;
+      height: 100%;
+      transition: 300ms;
+    }
+
+    .btn:hover span {
+      background: none;
+    }
+
+    #theobsbook{
+      height: 369px;
+      width: 264px;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark"> -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">NOteX</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            <div class="underline"></div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+            <div class="underline"></div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Subjects
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="M1.html">Mathematics - I</a></li>
+              <li><a class="dropdown-item" href="M2.html">Mathematics - II</a></li>
+              <li><a class="dropdown-item" href="Physics.html">Applied Physics</a></li>
+              <li><a class="dropdown-item" href="Chemistry.html">Engineering Chemistry</a></li>
+              <li><a class="dropdown-item" href="PPS.html">Programming for Problem Solving</a></li>
+              <li><a class="dropdown-item" href="Data Structures.html">Data Structures</a></li>
+              <li><a class="dropdown-item" href="python.html">Python Programming</a></li>
+              <li><a class="dropdown-item" href="DLD&CO.html">DLD & CO</a></li>
+              <li><a class="dropdown-item" href="P&S.html">Probability and Statistics</a></li>
+              <li><a class="dropdown-item" href="Java.html">Java Programming</a></li>
+              <li><a class="dropdown-item" href="OS.html">Operating System</a></li>
+              <li><a class="dropdown-item" href="DBMS.html">DBMS</a></li>
+              <!-- <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Others</a></li> -->
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="special books.html">Special Books</a>
+            <div class="underline"></div>
+          </li>
+          <!-- <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              </li> -->
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-info" type="submit"><span class="text">Search</span></button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <div class="alert alert-success alert-dismissible fade show" role="alert">
+    <strong>Hello!</strong> Click on book's cover page to open the book.
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+
+  <h1 id="head">SPECIAL BOOKS</h1>
+
+  <div class="row">
+    <div class="shadow-lg  mb-5 mt-3 rounded image-popup" style="width: 18rem">
+      <a href="RICH DAD POOR DAD - ROBERT T. KIYOSAKI.pdf" target="_blank"><img src="Rich dad poor dad title image.jpg"
+          class="img-thumbnail rounded" alt="RICH DAD POOR DAD"></a>
+    </div>
+    <div class="shadow-lg  mb-5 mt-3 rounded prologue" style="width: 18rem">
+      <p><strong><i>Rich Dad Poor Dad</i></strong> is a 1997 book written by <strong><i>Robert T. Kiyosaki</i></strong>.
+        It advocates the importance
+        of financial literacy (financial education), financial independence and building wealth through investing in
+        assets, real estate investing, starting and owning businesses, as well as increasing one's financial
+        intelligence (financial IQ).</p>
+    </div>
+
+    <div class="shadow-lg mb-5 mt-3 rounded image-popup" style="width: 18rem">
+      <a href="The-Monk-who-sold-his-ferrari.pdf" target="_blank"><img
+          src="The monk who sold his Ferrari title image.jpg" class="img-thumbnail rounded"
+          alt="The-Monk-who-sold-his-ferrari"></a>
+    </div>
+    <div class="shadow-lg mb-5 mt-3 rounded prologue" style="width: 18rem">
+      <p><strong><i> Monk Who Sold His Ferrari </i></strong> is a self-help book by <strong><i>Robin
+            Sharma</i></strong>, a writer and motivational speaker. The book is a business fable derived from Sharma's
+        personal experiences after leaving his career as a litigation lawyer
+        at the age of 25.</p>
+    </div>
+
+    <div class="shadow-lg mb-5 mt-3 rounded image-popup" style="width: 18rem">
+      <a href="the-alchemist.pdf" target="_blank"><img src="Alchemist book title image (1).jpg"
+          class="img-thumbnail rounded" alt="the-alchemist"></a>
+    </div>
+    <div class="shadow-lg mb-5 mt-3 rounded prologue" style="width: 18rem">
+      <p><strong><i>The Alchemist</i></strong> (Portuguese: O Alquimista) is a novel by Brazilian author
+        <strong><i>Paulo Coelho</i></strong> which was first published in 1988. Originally written in Portuguese, it
+        became a widely translated international bestseller. An allegorical novel, The Alchemist follows a young
+        Andalusian shepherd in his journey to the pyramids of Egypt, after having a recurring dream of finding a
+        treasure there.
+      </p>
+    </div>
+
+    <div class="shadow-lg mb-5 mt-3 rounded image-popup" style="width: 18rem">
+      <a href="Atomic Habits.pdf" target="_blank"><img src="Atomic habits title image.jpg" class="img-thumbnail rounded"
+          alt="Atomic Habits"></a>
+    </div>
+    <div class="shadow-lg mb-5 mt-3 rounded prologue" style="width: 18rem">
+      <p><strong><i>Atomic Habits</i></strong> is a self-help book by author <strong><i>James Clear</i></strong>. Atomic
+        Habits is the most comprehensive and practical guide on how to create good habits, break bad ones, and get 1
+        percent better every day. I do not believe you will find a more actionable book on the subject of habits and
+        improvement.</p>
+    </div>
+
+    <div class="shadow-lg mb-5 mt-3 rounded image-popup" style="width: 18rem">
+      <a href="Think Like a Monk.pdf" target="_blank"><img src="Think like a monk title image.jpg"
+          class="img-thumbnail rounded" alt="Can’t Hurt Me_ Master Your Mind and Defy the Odds"></a>
+    </div>
+    <div class="shadow-lg mb-5 mt-3 rounded prologue" style="width: 18rem">
+      <p><strong><i>Think Like a Monk</i></strong> is a book by author <strong><i>Jay Shetty</i></strong>. Combining
+        ancient wisdom and his own rich experiences in the ashram, Think Like a Monk reveals how to overcome negative
+        thoughts and habits, and access the calm and purpose that lie within all of us.</p>
+    </div>
+
+    <div class="shadow-lg mb-5 mt-3 rounded image-popup" style="width: 18rem">
+      <a href="Can't Hurt Me_ Master Your Mind and Defy the Odds.pdf" target="_blank"><img
+          src="Can't hurt me title image.jpg" class="img-thumbnail rounded"
+          alt="Can’t Hurt Me_ Master Your Mind and Defy the Odds"></a>
+    </div>
+    <div class="shadow-lg mb-5 mt-3 rounded prologue" style="width: 18rem">
+      <p><strong><i>Can't Hurt Me</i></strong> is the story of <strong><i>David Goggins</i></strong>, who went from
+        being overweight and depressed to becoming a record-breaking athlete, inspiring military leader, and world-class
+        personal trainer. Is the book can't hurt me worth it?
+        It's a solid ethos to help push and move your mental boundaries and help you realize your true potential.</p>
+    </div>
+
+    <div class="shadow-lg mb-5 mt-3 rounded image-popup" style="width: 18rem">
+      <a href="the-psychology-of-money-by-morgan-housel.pdf" target="_blank"><img
+          src="The Psycology of money book title image.jpg" class="img-thumbnail rounded"
+          alt="The Psycology of Money"></a>
+    </div>
+    <div class="shadow-lg mb-5 mt-3 rounded prologue" style="width: 18rem">
+      <p><strong><i>The Psycology of Money</i></strong> is a book by author <strong><i>Morgan Housel</i></strong>. The
+        Psychology of Money aims to examine the weaknesses in our mental attitudes with money and examine the attitude
+        of, in some cases, successful people in general – as a homogeneous group – to money. In other cases, the author
+        lays out his own principles of how he believes we should think of and handle our finances. </p>
+    </div>
+
+    <div class="shadow-lg mb-5 mt-3 rounded image-popup" style="width: 18rem">
+      <a href="instapdf.in-ikigai-book-177.pdf" target="_blank"><img src="Ikigai title image.jpg"
+          class="img-thumbnail rounded" alt="Ikigai"></a>
+    </div>
+    <div class="shadow-lg mb-5 mt-3 rounded prologue" style="width: 18rem">
+      <p><strong><i>Ikigai</i></strong> is a book by authors <strong><i>Hector Garcia</i></strong> and
+        <strong><i>Francesc Miralles</i></strong>. Ikigai is a Japanese concept referring to something that gives a
+        person a sense of purpose, a reason for living.</p>
+    </div>
+
+    <!-- New Ones! -->
+
+    <div class="shadow-lg mb-5 mt-3 rounded image-popup" style="width: 18rem">
+      <a href="Tools of Titans  The Tactics, Routines, and Habits of Billionaires, Icons, and World-Class Performer ( PDFDrive ( PDFDrive ).pdf"
+        target="_blank"><img src="Tools of Titans title image.jpg" class="img-thumbnail rounded" alt="Ikigai"></a>
+    </div>
+    <div class="shadow-lg mb-5 mt-3 rounded prologue" style="width: 18rem">
+      <p><strong><i>Tools of Titans: The Tactics, Routines, and Habits of Billionaires, Icons, and World-Class
+            Performers</i></strong> is a self-help book by <strong><i>Timothy Ferriss</i></strong>, an American writer,
+        educational activist, and entrepreneur. He interviewed more than 100 "world class performers" in diverse fields
+        on their advice for success. He added summary of his interview in this book.</p>
+    </div>
+
+    <div class="shadow-lg mb-5 mt-3 rounded image-popup" style="width: 18rem">
+      <a href="The 4-Hour Work Week book.pdf" target="_blank"><img src="The 4-Hour Work Week title image.jpg"
+          class="img-thumbnail rounded" alt="Ikigai"></a>
+    </div>
+    <div class="shadow-lg mb-5 mt-3 rounded prologue" style="width: 18rem">
+      <p><strong><i>The 4-Hour Work Week</i></strong> is a book by author <strong><i>Tim Ferriss</i></strong>. Tim
+        Ferriss wrote 'The 4-Hour Work Week' for all those tired of postponing their life until retirement, who instead
+        want to live life large and in the moment, right now. In The 4-Hour Work Week, Ferriss promises a way to get all
+        the rewards of working without having to wait until the end of your career.</p>
+    </div>
+
+    <div class="shadow-lg mb-5 mt-3 rounded image-popup" style="width: 18rem">
+      <a href="The-Almanack-of-Naval-Ravikant_book.pdf" target="_blank"><img
+          src="The-Almanack-of-Naval-Ravikant title image.jpg" class="img-thumbnail rounded" alt="Ikigai"></a>
+    </div>
+    <div class="shadow-lg mb-5 mt-3 rounded prologue" style="width: 18rem">
+      <p><strong><i>The Almanack of Naval Ravikant</i></strong> is a book by author <strong><i>Eric Jorgenson</i></strong>. The Almanack of Naval Ravikant is a collection of Naval's wisdom and experience from the last ten years, shared as a curation of his most insightful interviews and poignant reflections. Naval Ravikant is an Indian-American entrepreneur and investor. He is the co-founder, chairman and former CEO of AngelList.</p>
+    </div>
+
+    <div class="shadow-lg mb-5 mt-3 rounded image-popup" style="width: 18rem">
+      <a href="The 5 Second Rule_ Transform your Life, Work, and Confidence with Everyday Courage ( PDFDrive ).pdf"
+        target="_blank"><img src="The 5 Second Rule_ Transform your Life title image.jpg" class="img-thumbnail rounded"
+          alt="Ikigai"></a>
+    </div>
+    <div class="shadow-lg mb-5 mt-3 rounded prologue" style="width: 18rem">
+      <p><strong><i>The 5 Second Rule</i></strong> is a book by author <strong><i>Mel Robbins</i></strong>. Ikigai is a
+        Japanese concept referring to something that gives a person a sense of purpose, a reason for living.</p>
+    </div>
+
+    <div class="shadow-lg mb-5 mt-3 rounded image-popup" style="width: 18rem">
+      <a href="Sapiens-A-Brief-History-of-Humankind-pdf.pdf" target="_blank"><img src="Sapiens-A-Brief-History-of-Humankind title image.jpg"
+          class="img-thumbnail rounded" alt="Ikigai"></a>
+    </div>
+    <div class="shadow-lg mb-5 mt-3 rounded prologue" style="width: 18rem">
+      <p><strong><i>Sapiens - A Brief History of Humankind</i></strong> is a book by author <strong><i>Yuval Noah Harari</i></strong>. Sapiens, the book, takes us on a breath-taking ride through our entire human history, from its evolutionary roots to the age of capitalism and genetic engineering, to uncover why we are the way we are.</p>
+    </div>
+
+    <div class="shadow-lg mb-5 mt-3 rounded image-popup" style="width: 18rem">
+      <a href="The-Obstacle-Is-the-Way book.pdf" target="_blank"><img src="The-Obstacle-Is-the-Way title image.png"
+          class="img-thumbnail rounded" id="theobsbook" alt="Ikigai"></a>
+    </div>
+    <div class="shadow-lg mb-5 mt-3 rounded prologue" style="width: 18rem">
+      <p><strong><i>The Obstacle Is the Way: The Timeless Art of Turning Trials into Triumph</i></strong> is a book by
+        author <strong><i>Ryan Holiday</i></strong>. It was published in 2014. It is a book which offers individuals a
+        framework to flip obstacles into opportunities, an approach crafted by Holiday. It was inspired by the
+        philosophy of stoicism.</p>
+    </div>
+    
+    <div class="shadow-lg mb-5 mt-3 rounded image-popup" style="width: 18rem">
+      <a href="Midas Touch_ Why Some Entrepreneurs Get Rich-And Why Most Don't   ( PDFDrive ).pdf" target="_blank"><img src="Midas Touch title image.jpg"
+        class="img-thumbnail rounded" alt="Ikigai"></a>
+      </div>
+      <div class="shadow-lg mb-5 mt-3 rounded prologue" style="width: 18rem">
+        <p><strong><i>Midas Touch</i></strong> is a book by
+          two great entrepreneurs <strong><i>Donald J. Trump</i></strong> and <strong><i>Robert T. Kiyosaki</i></strong>. In this title, two entrepreneurial Icons share experiences and insights into creating and building successful businesses. What makes some business owners wildly successful? What separates the entrepreneurs who build businesses from ones who just seem to create more work for themselves?</p>
+        </div>
+
+        <div class="shadow-lg mb-5 mt-3 rounded image-popup" style="width: 18rem">
+          <a href="Think Again.pdf" target="_blank"><img src="Think Again title image.jpg"
+              class="img-thumbnail rounded" alt="Think Again"></a>
+        </div>
+        <div class="shadow-lg mb-5 mt-3 rounded prologue" style="width: 18rem">
+          <p><strong><i>Think Again</i></strong> is a book by author <strong><i>Adam Grant</i></strong>. This book pushes us to reconsider, rethink, reevaluate and reimagine our beliefs, thoughts, and identities and get to the core of why we believe what we do, why it is so important to us, and why we are steadfast to hold on to those ideas and beliefs.</p>
+        </div>
+
+  </div>
+  <!-- <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Subject</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Mathematics - I</a></li>
+            <li><a class="dropdown-item" href="#">Applied Physics</a></li>
+            <li><a class="dropdown-item" href="#">Chemistry</a></li>
+            <li><a class="dropdown-item" href="#">Programming for Problem Solving</a></li>
+            <li><a class="dropdown-item" href="#">Mathematics - II</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Others</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li>
+      </ul> -->
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
