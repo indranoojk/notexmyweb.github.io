@@ -1,0 +1,13 @@
+Subjects:
+1. Mathematics - I
+2. Mathematics - II
+3. Physics
+4. Chemistry
+5. Programming for Problem Solving
+6. Python Programming
+7. Probablility and Statistics
+8. Discrete Mathematics
+9. Operating System
+10. Digital Logic Design and Computer Organization
+11. Java
+12. DBMS 

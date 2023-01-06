@@ -1,0 +1,379 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap" rel="stylesheet">
+  <title>Project X | Subjects | M-I</title>
+
+  <style>
+    .row {
+      background-image: url(geometry-gecb87e61d_1920.jpg);
+    }
+
+    #head {
+      text-align: center;
+      margin: 40px 10px;
+      font-family: 'Merienda', cursive;
+    }
+
+    .card {
+      display: flex;
+      border-radius: 10px;
+    }
+
+    .card-title {
+      font-family: 'Racing Sans One', cursive;
+    }
+
+    /* .open {
+      margin-left: 70px;
+    }
+
+    .open:hover {
+      background-color: rgb(0, 0, 0);
+    } */
+
+    .card-text {
+      margin-left: 98px;
+    }
+
+    /* Designing the reference box */
+    .reference {
+      background-image: linear-gradient(140deg, skyblue, silver);
+      margin: 16px 150px 4px 150px;
+      border: 2px solid black;
+      text-align: center;
+      padding: 20px 10px 10px 10px;
+      border-radius: 40px;
+    }
+
+    .reference ul {
+      display: block;
+      list-style-type: none;
+    }
+
+    .dropdown:hover .dropdown-menu {
+      display: block;
+    }
+
+    .navbar{
+      background: linear-gradient(144deg, rgb(124, 4, 124), rgb(22, 22, 170), rgb(5, 5, 5));
+      color: black;
+    }
+
+    .container-fluid{
+      background-color: transparent;
+      color: white;
+    }
+
+    .container-fluid ul li a{
+      color: white;
+    }
+
+    .container-fluid ul li a:hover{
+      color: rgb(16, 194, 152);
+    }
+
+    .navbar-brand{
+      color: white;
+    }
+
+    .navbar-brand:hover{
+      color: white;
+    }
+
+    .container-fluid ul li .dropdown-item{
+      color: black;
+    }
+
+    .container-fluid ul li .dropdown-menu{
+      background-color: rgb(28, 217, 198);
+    }
+
+    .container-fluid ul li .dropdown-item:hover{
+      color: rgb(71, 12, 248);
+      background-color: rgb(244, 238, 183);
+      transition: transform .2s;
+      /* margin: 0px 12px 0px 12px; */
+      transform: scale(1.1);
+    }
+
+    .container-fluid ul li .underline {
+      height: 1px;
+      background-color: transparent;
+      width: 0%;
+      transition: width 0.2s, background-color 0.5s;
+      margin: 0 auto;
+      color: black;
+    }
+
+    /* .container-fluid ul li.active-link .underline {
+      width: 100%;
+      background-color: white;
+    } */
+
+    .container-fluid ul li:hover .underline {
+      background-color: white;
+      /* color: white; */
+      width: 100%;
+    }
+
+    #para {
+      text-align: center;
+      padding: 0px 88px 0px 88px;
+      font-family: cursive;
+      font-style: italic;
+    }
+
+    .open {
+      align-items: center;
+      background-image: linear-gradient(144deg, #AF40FF, #5B42F3 50%, #00DDEB);
+      /* background-image: linear-gradient(144deg, #b9b9be, #000000 50%, #cecece); */
+      border: 0;
+      border-radius: 8px;
+      box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+      box-sizing: border-box;
+      color: #FFFFFF;
+      display: flex;
+      font-family: Phantomsans, sans-serif;
+      font-size: 16px;
+      justify-content: center;
+      touch-action: manipulation;
+      white-space: nowrap;
+      cursor: pointer;
+      padding: 5px;
+      margin: 6px;
+      text-decoration: none;
+      user-select: none;
+      -webkit-user-select: none;
+    }
+
+    .btns {
+      align-items: center;
+      /* background-image: linear-gradient(144deg, #AF40FF, #5B42F3, #00DDEB); */
+      /* background-image: linear-gradient(144deg, #b9b9be, #000000 50%, #cecece); */
+      background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+      border: 0;
+      border-radius: 8px;
+      box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+      box-sizing: border-box;
+      color: #FFFFFF;
+      display: flex;
+      font-family: Phantomsans, sans-serif;
+      font-size: 16px;
+      justify-content: center;
+      touch-action: manipulation;
+      white-space: nowrap;
+      cursor: pointer;
+      padding: 3px;
+      text-decoration: none;
+      user-select: none;
+      -webkit-user-select: none;
+    }
+
+    .btns span {
+      background-color: rgb(5, 6, 45);
+      padding: 6px 14px;
+      border-radius: 6px;
+      width: 100%;
+      height: 100%;
+      transition: 300ms;
+    }
+
+    .btns:hover span {
+      background: none;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark"> -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">NOteX</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            <div class="underline"></div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+            <div class="underline"></div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Subjects
+            </a>
+
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="M1.html">Mathematics - I</a></li>
+              <li><a class="dropdown-item" href="M2.html">Mathematics - II</a></li>
+              <li><a class="dropdown-item" href="Physics.html">Applied Physics</a></li>
+              <li><a class="dropdown-item" href="Chemistry.html">Engineering Chemistry</a></li>
+              <li><a class="dropdown-item" href="PPS.html">Programming for Problem Solving</a></li>
+              <li><a class="dropdown-item" href="Data Structures.html">Data Structures</a></li>
+              <li><a class="dropdown-item" href="python.html">Python Programming</a></li>
+              <li><a class="dropdown-item" href="DLD&CO.html">DLD & CO</a></li>
+              <li><a class="dropdown-item" href="P&S.html">Probability and Statistics</a></li>
+              <li><a class="dropdown-item" href="Java.html">Java Programming</a></li>
+              <li><a class="dropdown-item" href="OS.html">Operating System</a></li>
+              <li><a class="dropdown-item" href="DBMS.html">DBMS</a></li>
+              <!-- <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Others</a></li> -->
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="special books.html">Special Books</a>
+            <div class="underline"></div>
+          </li>
+          <!-- <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              </li> -->
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-info btns" type="submit"><span class="text">Search</span></button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <h1 id="head">ENGINEERING MATHEMATICS - I</h1>
+
+  <div class="row">
+    <div class="card shadow-lg p-3 mb-5 bg-white rounded" style="width: 18rem; margin: 20px">
+      <img src="M-II unit 1 display thumbnail inclined.png" class="card-img-top" alt="Chemistry Unit 2">
+      <div class="card-body">
+        <h5 class="card-title">M-I UNIT-1</h5>
+        <p class="card-text">- P.Vijayalakshmi mam</p>
+        <a href="Chemistry UNIT 2 CLASS NOTES.pdf" class="btn btn-secondary open" target="_blank">OPEN</a>
+      </div>
+    </div>
+
+    <div class="card shadow-lg p-3 mb-5 bg-white rounded" style="width: 18rem; margin: 20px">
+      <img src="M-II unit 2 display thumbnail inclined.png" class="card-img-top" alt="Chemistry Unit 2">
+      <div class="card-body">
+        <h5 class="card-title">M-I UNIT-2</h5>
+        <p class="card-text">- P.Vijayalakshmi mam</p>
+        <a href="Chemistry UNIT 3 CLASS NOTES.pdf" class="btn btn-secondary open" target="_blank">OPEN</a>
+      </div>
+    </div>
+
+    <div class="card shadow-lg p-3 mb-5 bg-white rounded" style="width: 18rem; margin: 20px">
+      <img src="M-II unit 3 display thumbnail inclined.png" class="card-img-top" alt="Chemistry Unit 2">
+      <div class="card-body">
+        <h5 class="card-title">M-I UNIT-3</h5>
+        <p class="card-text">- P.Vijayalakshmi mam</p>
+        <a href="Chemistry UNIT 4 CLASS NOTES.pdf" class="btn btn-secondary open" target="_blank">OPEN</a>
+      </div>
+    </div>
+
+    <div class="card shadow-lg p-3 mb-5 bg-white rounded" style="width: 18rem; margin: 20px">
+      <img src="M-II unit 4 display thumbnail inclined.png" class="card-img-top" alt="Chemistry Unit 2">
+      <div class="card-body">
+        <h5 class="card-title">M-I UNIT-4</h5>
+        <p class="card-text">- P.Vijayalakshmi mam</p>
+        <a href="Chemistry UNIT 2 CLASS NOTES.pdf" class="btn btn-secondary open" target="_blank">OPEN</a>
+      </div>
+    </div>
+
+    <div class="card shadow-lg p-3 mb-5 bg-white rounded" style="width: 18rem; margin: 20px">
+      <img src="M-II unit 5 display thumbnail inclined.png" class="card-img-top" alt="Chemistry Unit 2">
+      <div class="card-body">
+        <h5 class="card-title">M-I UNIT-5</h5>
+        <p class="card-text">- P.Vijayalakshmi mam</p>
+        <a href="Chemistry UNIT 3 CLASS NOTES.pdf" class="btn btn-secondary open" target="_blank">OPEN</a>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="reference">
+    <h2>Reference books and Websites</h2><br>
+
+    <p id="para">This part of the website will provide you with some website links and reference books by using which you can
+      learn the subject in more convinient way.</p>
+
+    <h4>Websites:</h4>
+    <ul class="websites">
+      <li>www.Python.org</li>
+      <li>www.Python.org</li>
+      <li>www.Python.org</li>
+      <li>www.Python.org</li>
+      <li>www.Python.org</li>
+    </ul>
+
+    <h4>Books:</h4>
+    <ul class="websites">
+      <li>Python programming textbook</li>
+      <li>Python programming textbook</li>
+      <li>Python programming textbook</li>
+      <li>Python programming textbook</li>
+      <li>Python programming textbook</li>
+    </ul>
+
+  </div>
+
+  <!-- <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Subject</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Mathematics - I</a></li>
+            <li><a class="dropdown-item" href="#">Applied Physics</a></li>
+            <li><a class="dropdown-item" href="#">Chemistry</a></li>
+            <li><a class="dropdown-item" href="#">Programming for Problem Solving</a></li>
+            <li><a class="dropdown-item" href="#">Mathematics - II</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Others</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li>
+      </ul> -->
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
