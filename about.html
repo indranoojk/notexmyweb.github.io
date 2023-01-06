@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <title>Project X | About</title>
+
+  <style>
+    .container {
+      background-color: antiquewhite;
+      padding: 40px;
+    }
+
+    .dropdown:hover .dropdown-menu {
+      display: block;
+    }
+
+    .navbar {
+      background: linear-gradient(144deg, rgb(124, 4, 124), rgb(22, 22, 170), rgb(5, 5, 5));
+      color: black;
+    }
+
+    .container-fluid {
+      background-color: transparent;
+      color: white;
+    }
+
+    .container-fluid ul li a {
+      color: white;
+    }
+
+    .container-fluid ul li a:hover {
+      color: rgb(16, 194, 152);
+    }
+
+    .navbar-brand {
+      color: white;
+    }
+
+    .navbar-brand:hover {
+      color: white;
+    }
+
+    .container-fluid ul li .dropdown-item {
+      color: black;
+    }
+
+    .container-fluid ul li .dropdown-menu {
+      background-color: rgb(28, 217, 198);
+    }
+
+    .container-fluid ul li .dropdown-item:hover {
+      color: rgb(71, 12, 248);
+      background-color: rgb(244, 238, 183);
+      transition: transform .2s;
+      /* margin: 0px 12px 0px 12px; */
+      transform: scale(1.1);
+    }
+
+    .container-fluid ul li .underline {
+      height: 1px;
+      background-color: transparent;
+      width: 0%;
+      transition: width 0.2s, background-color 0.5s;
+      margin: 0 auto;
+      color: black;
+    }
+
+    /* .container-fluid ul li.active-link .underline {
+      width: 100%;
+      background-color: white;
+    } */
+
+    .container-fluid ul li:hover .underline {
+      background-color: white;
+      /* color: white; */
+      width: 100%;
+    }
+
+    .btn {
+      align-items: center;
+      /* background-image: linear-gradient(144deg, #AF40FF, #5B42F3, #00DDEB); */
+      /* background-image: linear-gradient(144deg, rgb(134, 50, 230), rgb(0, 187, 255), rgb(196, 23, 176)); */
+      background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+      border: 0;
+      border-radius: 8px;
+      box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+      box-sizing: border-box;
+      color: #FFFFFF;
+      display: flex;
+      font-family: Phantomsans, sans-serif;
+      font-size: 16px;
+      justify-content: center;
+      touch-action: manipulation;
+      white-space: nowrap;
+      cursor: pointer;
+      padding: 3px;
+      text-decoration: none;
+      user-select: none;
+      -webkit-user-select: none;
+    }
+
+    .btn span {
+      background-color: rgb(5, 6, 45);
+      padding: 6px 14px;
+      border-radius: 6px;
+      width: 100%;
+      height: 100%;
+      transition: 300ms;
+    }
+
+    .btn:hover span {
+      background: none;
+    }
+
+    /* CSS for button*/
+    /* .button-64 {
+  align-items: center;
+  background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 20px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 3px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.button-64:active,
+.button-64:hover {
+  outline: 0;
+}
+
+.button-64 span {
+  background-color: rgb(5, 6, 45);
+  padding: 16px 24px;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  transition: 300ms;
+}
+
+.button-64:hover span {
+  background: none;
+}
+
+@media (min-width: 768px) {
+  .button-64 {
+    font-size: 24px;
+    min-width: 196px;
+  }
+} */
+  </style>
+
+</head>
+
+<body>
+
+  <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark"> -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">NOteX</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            <div class="underline"></div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="about.html">About</a>
+            <div class="underline"></div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Subjects
+            </a>
+
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="M1.html">Mathematics - I</a></li>
+              <li><a class="dropdown-item" href="M2.html">Mathematics - II</a></li>
+              <li><a class="dropdown-item" href="Physics.html">Applied Physics</a></li>
+              <li><a class="dropdown-item" href="Chemistry.html">Engineering Chemistry</a></li>
+              <li><a class="dropdown-item" href="PPS.html">Programming for Problem Solving</a></li>
+              <li><a class="dropdown-item" href="Data Structures.html">Data Structures</a></li>
+              <li><a class="dropdown-item" href="python.html">Python Programming</a></li>
+              <li><a class="dropdown-item" href="DLD&CO.html">DLD & CO</a></li>
+              <li><a class="dropdown-item" href="P&S.html">Probability and Statistics</a></li>
+              <li><a class="dropdown-item" href="Java.html">Java Programming</a></li>
+              <li><a class="dropdown-item" href="OS.html">Operating System</a></li>
+              <li><a class="dropdown-item" href="DBMS.html">DBMS</a></li>
+              <!-- <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Others</a></li> -->
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="special books.html">Special Books</a>
+            <div class="underline"></div>
+          </li>
+
+          <!-- <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              </li> -->
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-info" type="submit"><span class="text">Search</span></button>
+          <!-- <button class="button-64" role="button"><span class="text">Search</span></button> -->
+          <!-- HTML !-->
+        </form>
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="container">
+    <h2>Developer: <i>Kamble Indranooj</i></h2>
+    <p>Hello, I am Kamble Indranooj from CSM department of MLRITM. I have created this website to help our
+      college students to get access to the notes provided by the respective faculty.</p>
+    <h4>Why this website?</h4>
+    <p>You guys might be thinking why I developed this website, right?<br>
+      I will tell you why!<br>
+      As you guys have seen our examination time scenario, we will be searching for pdf notes here and there, sometimes
+      our phone gets formatted or our data will get lost at that time instead of wasting your time searching for notes,
+      you can directly access the notes of various faculty members by using this website.
+    </p>
+    <p><strong>Note:</strong> This website will provide notes only related to the academics and syllabus.</p>
+  </div>
+  <!-- <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Subject</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Mathematics - I</a></li>
+            <li><a class="dropdown-item" href="#">Applied Physics</a></li>
+            <li><a class="dropdown-item" href="#">Chemistry</a></li>
+            <li><a class="dropdown-item" href="#">Programming for Problem Solving</a></li>
+            <li><a class="dropdown-item" href="#">Mathematics - II</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Others</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li>
+      </ul> -->
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
