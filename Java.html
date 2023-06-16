@@ -198,6 +198,53 @@
         .btns:hover span {
             background: none;
         }
+
+        #website-section {
+            position: relative;
+        }
+
+        #websites {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .websites-item {
+            padding: 34px;
+        }
+
+        #websites img {
+            height: 144px;
+        }
+
+        .youtube {
+            /* text-align: center; */
+            margin: 20px 20px 20px 20px;
+        }
+
+        #ythead {
+            text-align: center;
+            font-weight: bold;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 50px;
+        }
+
+        .channel {
+            margin-left: 372px;
+            margin-bottom: 20px;
+            width: 560px;
+            height: 315px;
+        }
+
+        .h-primary {
+            font-family: 'Bree Serif', serif;
+            font-size: 3.2rem;
+            padding: 10px;
+        }
+
+        .center {
+            text-align: center;
+        }
     </style>
 
 </head>
@@ -316,33 +363,104 @@
         </div>
     </div>
 
-    <div class="reference">
+    <!-- <div class="reference">
         <h2>Reference books and Websites</h2><br>
-
+        
         <p id="para">This part of the website will provide you with some website links and reference books by using
             which you can
             learn the subject in more convinient way.</p>
+        </div> -->
 
-        <h4>Websites:</h4>
+    <!-- <h4>Websites:</h4>
         <ul class="websites">
             <li><a href="https://www.geeksforgeeks.org/c-programming-language/"
-                    target="_blank">www.geeksforgeeks.org</a></li>
-            <li><a href="https://www.javatpoint.com/c-programming-language-tutorial"
+                target="_blank">www.geeksforgeeks.org</a></li>
+                <li><a href="https://www.javatpoint.com/c-programming-language-tutorial"
                     target="_blank">www.javatpoint.com</a></li>
-            <li><a href="https://www.w3schools.com/c/" target="_blank">www.w3schools.com</a></li>
-            <li><a href="https://www.programiz.com/c-programming" target="_blank">www.programiz.com</a></li>
-        </ul>
+                    <li><a href="https://www.w3schools.com/c/" target="_blank">www.w3schools.com</a></li>
+                    <li><a href="https://www.programiz.com/c-programming" target="_blank">www.programiz.com</a></li>
+        </ul> -->
 
-        <h4>Books:</h4>
-        <ul class="websites">
-            <li>Python programming textbook</li>
-            <li>Python programming textbook</li>
-            <li>Python programming textbook</li>
-            <li>Python programming textbook</li>
-            <li>Python programming textbook</li>
-        </ul>
 
+    <section id="website-section">
+        <h4 class="h-primary center">Best websites to learn programming</h4>
+        <div id="websites">
+            <div class="websites-item">
+                <img src="geeksforgeeks logo.jpeg" alt="geeksforgeeks logo">
+            </div>
+            <div class="websites-item">
+                <img src="Python-logo-notext.svg.webp" alt="python.org logo">
+            </div>
+            <div class="websites-item">
+                <img src="w3schools logo.svg" alt="python.org logo">
+            </div>
+            <div class="websites-item">
+                <img src="javatpoint logo.png" alt="python.org logo">
+            </div>
+            <div class="websites-item">
+                <img src="programiz logo.png" alt="python.org logo">
+            </div>
+
+        </div>
+    </section>
+
+    <div id="books-section">
+        <h4 class="h-primary center">Best websites to learn programming</h4>
+        <div id="websites">
+            <div id="books-item">
+                <ul>
+                    <li>Python programming textbook</li>
+                    <li>Python programming textbook</li>
+                    <li>Python programming textbook</li>
+                    <li>Python programming textbook</li>
+                    <li>Python programming textbook</li>
+                </ul>
+            </div>
+        </div>
     </div>
+
+
+    <hr>
+
+    <div class="youtube">
+        <h2 id="ythead">Learn from YouTube</h2>
+        <div id="mosh">
+            <h3>1. Programming with Mosh</h3>
+            <!-- <iframe class="channel" width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLTjRvDozrdlxj5wgH4qkvwSOdHLOCx10f" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+            <img class="channel" src="programming with mosh python.jpeg" alt="programming with mosh python">
+            <p>Mosh Hamedani, better known online as Programming with Mosh, is an Australian educational YouTuber and
+                software
+                engineer specializing in web application development with ASP.NET MVC, Web API, Entity Framework,
+                Angular,
+                Backbone, HTML5, and CSS. He is based in Melbourne, Australia.</p>
+            <p>To learn Python from mosh <a
+                    href="https://www.youtube.com/playlist?list=PLTjRvDozrdlxj5wgH4qkvwSOdHLOCx10f">click here..</a></p>
+        </div>
+
+        <div id="harry">
+            <h3>2. Code with Harry</h3>
+            <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLu0W_9lII9agwh1XjRt242xIpHhPT2llg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+            <img class="channel" src="code with harry python.jpg" alt="code with harry python">
+            <p>Harris Ali Khan (aka code with Harry) is a graduate of IIT Kharagpur,he got very good knowledge of almost
+                everything and many a times he teaches with his personal experience which you don't find on other
+                YouTube
+                channels</p>
+            <p>To learn Python from Harry <a
+                    href="https://www.youtube.com/playlist?list=PLu0W_9lII9agwh1XjRt242xIpHhPT2llg">click here..</a></p>
+        </div>
+
+        <div id="harry">
+            <h3>3. CodeHelp - by Babbar</h3>
+            <img class="channel" src="codehelp by babbar python.jpg" alt="CodeHelp - by Babbar python">
+            <p>Babbar was an Android developer and a software engineer at Amazon. He is a graduate from NSIT, Delhi.
+                Currently
+                he conquered the fame as a YouTuber for his content on education, interview , placement preparation and
+                programming.</p>
+            <p>To learn Python from Babbar <a
+                    href="https://www.youtube.com/playlist?list=PLDzeHZWIZsTrPQHBWT0Rxjc37n6DjUpbf">click here..</a></p>
+        </div>
+    </div>
+
 
 
     <!-- <ul id="list">
