@@ -19,283 +19,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap" rel="stylesheet">
 
   <title>Project X | Subjects | Python</title>
-
-  <style>
-    .row {
-      background-image: url(mingwei-lim-hdHKbb64RRU-unsplash.jpg);
-    }
-
-    #head {
-      text-align: center;
-      margin: 40px 10px;
-      font-family: 'Merienda', cursive;
-    }
-
-    .card {
-      display: flex;
-      border-radius: 10px;
-    }
-
-    .card-title {
-      font-family: 'Racing Sans One', cursive;
-    }
-
-    .open {
-      margin-left: 70px;
-    }
-
-    .open:hover {
-      background-color: rgb(119, 3, 187);
-    }
-
-    .card-text {
-      margin-left: 98px;
-    }
-
-    /* Designing the reference box */
-    .reference {
-      /* background-image: linear-gradient(140deg, skyblue, silver); */
-      margin: 16px 150px 4px 150px;
-      /* border: 8px solid white; */
-      /* border: 6px solid black; */
-      text-align: center;
-      padding: 20px 10px 10px 10px;
-      /* border-radius: 40px; */
-      /* color: white; */
-    }
-
-    .reference ul {
-      display: block;
-      list-style-type: none;
-    }
-
-    .dropdown:hover .dropdown-menu {
-      display: block;
-    }
-
-    .navbar {
-      /* background: linear-gradient(144deg, rgb(124, 4, 124), rgb(22, 22, 170), rgb(4, 169, 229)); */
-      background: linear-gradient(144deg, rgb(124, 4, 124), rgb(22, 22, 170), rgb(5, 5, 5));
-      color: black;
-    }
-
-    .container-fluid {
-      background-color: transparent;
-      color: white;
-    }
-
-    .container-fluid ul li a {
-      color: white;
-    }
-
-    .container-fluid ul li a:hover {
-      color: rgb(16, 194, 152);
-    }
-
-    .navbar-brand {
-      color: white;
-    }
-
-    .navbar-brand:hover {
-      color: white;
-    }
-
-    .container-fluid ul li .dropdown-item {
-      color: black;
-    }
-
-    .container-fluid ul li .dropdown-menu {
-      background-color: rgb(28, 217, 198);
-    }
-
-    .container-fluid ul li .dropdown-item:hover {
-      color: rgb(71, 12, 248);
-      background-color: rgb(244, 238, 183);
-      transition: transform .2s;
-      /* margin: 0px 12px 0px 12px; */
-      transform: scale(1.1);
-    }
-
-    .container-fluid ul li .underline {
-      height: 1px;
-      background-color: transparent;
-      width: 0%;
-      transition: width 0.2s, background-color 0.5s;
-      margin: 0 auto;
-      color: black;
-    }
-
-    /* .container-fluid ul li.active-link .underline {
-      width: 100%;
-      background-color: white;
-    } */
-
-    .container-fluid ul li:hover .underline {
-      background-color: white;
-      /* color: white; */
-      width: 100%;
-    }
-
-    #para {
-      text-align: center;
-      padding: 0px 88px 0px 88px;
-      font-family: cursive;
-      font-style: italic;
-    }
-
-    .open {
-      align-items: center;
-      background-image: linear-gradient(144deg, #AF40FF, #5B42F3, #00DDEB);
-      /* background-image: linear-gradient(144deg, #b9b9be, #000000 50%, #cecece); */
-      border: 0;
-      border-radius: 8px;
-      box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
-      box-sizing: border-box;
-      color: #FFFFFF;
-      display: flex;
-      font-family: Phantomsans, sans-serif;
-      font-size: 16px;
-      justify-content: center;
-      touch-action: manipulation;
-      white-space: nowrap;
-      cursor: pointer;
-      padding: 5px;
-      margin: 6px;
-      text-decoration: none;
-      user-select: none;
-      -webkit-user-select: none;
-    }
-
-    .btns {
-      align-items: center;
-      /* background-image: linear-gradient(144deg, #AF40FF, #5B42F3 50%, #00DDEB); */
-      /* background-image: linear-gradient(140deg, pink, #f540ff, #f3a042 50%, #e982dd, pink); */
-      background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
-      /* border: 0; */
-      border-radius: 8px;
-      box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
-      box-sizing: border-box;
-      color: #FFFFFF;
-      display: flex;
-      font-family: Phantomsans, sans-serif;
-      font-size: 16px;
-      justify-content: center;
-      touch-action: manipulation;
-      white-space: nowrap;
-      cursor: pointer;
-      padding: 3px;
-      text-decoration: none;
-      user-select: none;
-      -webkit-user-select: none;
-    }
-
-    .btns span {
-      background-color: rgb(5, 6, 45);
-      padding: 6px 14px;
-      border-radius: 6px;
-      width: 100%;
-      height: 100%;
-      transition: 300ms;
-    }
-
-    .btns:hover span {
-      background: none;
-    }
-
-    .gradient-border {
-      --borderWidth: 3px;
-      background: #099ce6;
-      position: relative;
-      border-radius: var(--borderWidth);
-    }
-
-    .gradient-border:after {
-      content: '';
-      position: absolute;
-      top: calc(-1 * var(--borderWidth));
-      left: calc(-1 * var(--borderWidth));
-      height: calc(100% + var(--borderWidth) * 2);
-      width: calc(100% + var(--borderWidth) * 2);
-      background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
-      border-radius: calc(2 * var(--borderWidth));
-      z-index: -1;
-      animation: animatedgradient 3s ease alternate infinite;
-      background-size: 300% 300%;
-    }
-
-
-    @keyframes animatedgradient {
-      0% {
-        background-position: 0% 50%;
-      }
-
-      50% {
-        background-position: 100% 50%;
-      }
-
-      100% {
-        background-position: 0% 50%;
-      }
-    }
-
-    #website-section {
-      position: relative;
-    }
-
-    #websites {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .websites-item {
-      padding: 34px;
-    }
-
-    #websites img{
-      height: 144px;
-    }
-
-    .youtube {
-      /* text-align: center; */
-      margin: 20px 20px 20px 20px;
-    }
-
-    #ythead {
-      text-align: center;
-      font-weight: bold;
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
-      font-size: 50px;
-    }
-
-    .channel {
-      margin-left: 372px;
-      margin-bottom: 20px;
-      width: 560px;
-      height: 315px;
-    }
-
-    .h-primary {
-      font-family: 'Bree Serif', serif;
-      font-size: 3.2rem;
-      padding: 10px;
-    }
-
-    .center {
-      text-align: center;
-    }
-
-
-    /* Responsiveness Code Here */
-
-    /* For mobile portrait view */
-    @media screen and (max-device-width: 480px) and (orientation:portrait) {
-      .h-primary {
-        font-size: 10vh;
-      }
-    }
-  </style>
-
+  <link rel="stylesheet" href="python.css">
 </head>
 
 <body>
@@ -366,7 +90,7 @@
       <img src="Python Unit-1 evo thumbnail.png" class="card-img-top" alt="PPS Unit 1">
       <div class="card-body">
         <h5 class="card-title">PYTHON UNIT - 1</h5>
-        <p class="card-text">- V.V.N.Raju sir</p>
+        <!-- <p class="card-text">- V.V.N.Raju sir</p> -->
         <a href="PPS UNIT 1 Notes.pdf" class="btn btn-secondary open" target="_blank">OPEN</a>
       </div>
     </div>
@@ -375,7 +99,7 @@
       <img src="Python Unit-2 evo thumbnail.png" class="card-img-top" alt="PPS Unit 2">
       <div class="card-body">
         <h5 class="card-title">PYTHON UNIT - 2</h5>
-        <p class="card-text">- V.V.N.Raju sir</p>
+        <!-- <p class="card-text">- V.V.N.Raju sir</p> -->
         <a href="PPS UNIT 2 Notes.pdf" class="btn btn-secondary open" target="_blank">OPEN</a>
       </div>
     </div>
@@ -384,7 +108,7 @@
       <img src="Python Unit-3 evo thumbnail.png" class="card-img-top" alt="PPS Unit 3">
       <div class="card-body">
         <h5 class="card-title">PYTHON UNIT - 3</h5>
-        <p class="card-text">- V.V.N.Raju sir</p>
+        <!-- <p class="card-text">- V.V.N.Raju sir</p> -->
         <a href="PPS UNIT 3 Notes.pdf" class="btn btn-secondary open" target="_blank">OPEN</a>
       </div>
     </div>
@@ -393,7 +117,7 @@
       <img src="Python Unit-4 evo thumbnail.png" class="card-img-top" alt="PPS Unit 4">
       <div class="card-body">
         <h5 class="card-title">PYTHON UNIT - 4</h5>
-        <p class="card-text">- V.V.N.Raju sir</p>
+        <!-- <p class="card-text">- V.V.N.Raju sir</p> -->
         <a href="PPS UNIT 1 Notes.pdf" class="btn btn-secondary open" target="_blank">OPEN</a>
       </div>
     </div>
@@ -402,7 +126,7 @@
       <img src="Python Unit-5 evo thumbnail.png" class="card-img-top" alt="PPS Unit 5">
       <div class="card-body">
         <h5 class="card-title">PYTHON UNIT - 5</h5>
-        <p class="card-text">- V.V.N.Raju sir</p>
+        <!-- <p class="card-text">- V.V.N.Raju sir</p> -->
         <a href="PPS Unit 5 Notes.pdf" class="btn btn-secondary open" target="_blank">OPEN</a>
       </div>
     </div>
@@ -425,33 +149,74 @@
     </li>
     <li><a href="https://www.programiz.com/c-programming" target="_blank">www.programiz.com</a></li>
   </ul> -->
-  
+
   <section id="website-section">
     <h4 class="h-primary center">Best websites to learn programming</h4>
     <div id="websites">
-      <div class="websites-item">
-        <img src="geeksforgeeks logo.jpeg" alt="geeksforgeeks logo">
+      <div class="websites-container" >
+        <div class="websites-image">
+          <img src="geeksforgeeks logo.jpeg" alt="geeksforgeeks logo">
+        </div>
+        <div class="website-content">
+          <p>GeeksForGeeks is a Computer Science portal. It contains written, explained computer science and programming
+            articles, quizzes and practice/competitive programming/company interview Questions. With the idea of
+            imparting programming knowledge, Mr. Sandeep Jain, an IIT Roorkee alumnus started a dream, GeeksforGeeks.
+          </p>
+          <a href="#" class="btn2">Visit</a>
+        </div>
       </div>
-      <div class="websites-item">
-        <img src="Python-logo-notext.svg.webp" alt="python.org logo">
+
+      <div class="websites-container" >
+        <div class="websites-image">
+          <img src="Python-logo-notext.svg.webp" alt="python.org logo">
+        </div>
+        <div class="website-content">
+          <p>The Python Software Foundation is the organization behind the open source Python programming language. They
+            are devoted to creating the conditions for Python and the Python community to grow and thrive.</p>
+            <a href="#" class="btn2">Visit</a>
+        </div>
       </div>
-      <div class="websites-item">
-        <img src="w3schools logo.svg" alt="python.org logo">
+
+      <div class="websites-container" >
+        <div class="websites-image">
+          <img src="w3schools logo.svg" alt="python.org logo">
+        </div>
+        <div class="website-content">
+          <p>W3Schools is a freemium educational website for learning coding online. Initially released in 1998, it
+            derives its name from the World Wide Web but is not affiliated with the W3 Consortium. W3Schools offers
+            courses covering all aspects of web development. W3Schools also publishes free HTML templates.</p>
+            <a href="#" class="btn2">Visit</a>
+        </div>
       </div>
-      <div class="websites-item">
-        <img src="javatpoint logo.png" alt="python.org logo">
+
+      <div class="websites-container" >
+        <div class="websites-image">
+          <img src="javatpoint logo.png" alt="python.org logo">
+        </div>
+        <div class="website-content">
+          <p>JavaTpoint provides easy and point to point learning of various online tutorials such as Java, Android,
+            Design Pattern, JavaScript, AJAX, SQL, Artificial Intellegence, Cloud Computing, Hadoop, Data Science,
+            Machine Learning, Blockchain, Angular, and Python etc.</p>
+            <a href="#" class="btn2">Visit</a>
+        </div>
       </div>
-      <div class="websites-item">
-        <img src="programiz logo.png" alt="python.org logo">
+
+      <div class="websites-container" >
+        <div class="websites-image">
+          <img src="programiz logo.png" alt="python.org logo">
+        </div>
+        <div class="website-content">
+          <p>Programiz is a platform to learn programming built by programmers for programmers. </p>
+          <a href="#" class="btn2">Visit</a>
+        </div>
       </div>
-      
     </div>
+
   </section>
 
 
   <div id="books-section">
     <h4 class="h-primary center">Best websites to learn programming</h4>
-    <div id="websites">
       <div id="books-item">
         <ul>
           <li>Python programming textbook</li>
@@ -461,7 +226,6 @@
           <li>Python programming textbook</li>
         </ul>
       </div>
-    </div>
   </div>
 
 
@@ -491,7 +255,7 @@
           href="https://www.youtube.com/playlist?list=PLu0W_9lII9agwh1XjRt242xIpHhPT2llg">click here..</a></p>
     </div>
 
-    <div id="harry">
+    <div id="babbar">
       <h3>3. CodeHelp - by Babbar</h3>
       <img class="channel" src="codehelp by babbar python.jpg" alt="CodeHelp - by Babbar python">
       <p>Babbar was an Android developer and a software engineer at Amazon. He is a graduate from NSIT, Delhi. Currently
